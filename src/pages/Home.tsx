@@ -17,7 +17,8 @@ const Home = () => {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" style={{ flexGrow: 1 }}>
-            <Avatar alt="Diego D'mitry" src={`${process.env.PUBLIC_URL}/me.jpeg`} />
+            <Avatar alt="Diego D'mitry" src="/me.jpeg" />
+            {/* <Avatar alt="Diego D'mitry" src="../../public/me.jpeg" /> */}
           </Typography>
           <ThemeToggle />
         </Toolbar>
