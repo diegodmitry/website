@@ -84,7 +84,7 @@ const Home = () => {
             >
               Developer | Techinical Support Engineer
             </Typography>
-            <Box mt={'1.5rem'}>
+            <Box mt={'1.5rem'} bgcolor={"pink"}>
               <IconButton
                 // edge="end" // Aligns the button at the beginning of the Toolbar or Box
                 color="inherit"
