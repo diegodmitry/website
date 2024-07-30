@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -13,7 +11,6 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import IconButton from '@mui/material/IconButton';
 
 const Home = () => {
-  const [count, setCount] = useState(0)
 
   return (
     <>
