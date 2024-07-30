@@ -17,7 +17,7 @@ const Home = () => {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" style={{ flexGrow: 1 }}>
-            <Avatar alt="Diego D'mitry" src="/diegodmitrywebsite/me.jpeg" />
+            <Avatar alt="Diego D'mitry" src="/website/me.jpeg" />
             {/* <Avatar alt="Diego D'mitry" src="/me.jpeg" /> */}
             {/* <Avatar alt="Diego D'mitry" src="../../public/me.jpeg" /> */}
           </Typography>
