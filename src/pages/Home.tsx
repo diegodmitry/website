@@ -84,7 +84,7 @@ const Home = () => {
             >
               Developer | Techinical Support Engineer
             </Typography>
-            <Box mt={'1.5rem'} bgcolor={"pink"}>
+            <Box mt={'1.5rem'}>
               <IconButton
                 // edge="end" // Aligns the button at the beginning of the Toolbar or Box
                 color="inherit"
@@ -126,7 +126,7 @@ const Home = () => {
               sx={{
                 mt: {
                   xs: "2rem",
-                  lg: "6rem"
+                  lg: "4rem"
                 }
               }}
             >
