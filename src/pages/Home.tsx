@@ -188,7 +188,8 @@ const Home = () => {
                 
               </Box>
             </Box>
-            {/* Blog */}
+            {/* Blog or Writing */}
+            {/* Courses */}
             {/* <Box
               sx={{
                 mt: {
