@@ -10,6 +10,9 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import IconButton from '@mui/material/IconButton';
 
+import { Card, CardMedia, CardContent, Link } from '@mui/material';
+import { UnderConstructionBanner } from '../components/UnderConstructionBanner';
+
 const Home = () => {
 
   return (
@@ -130,6 +133,7 @@ const Home = () => {
                 }
               }}
             >
+              <UnderConstructionBanner />
               <Typography
                 variant="h4"
                 component="h1"
@@ -185,12 +189,12 @@ const Home = () => {
                     <li>Network Services: DHCP, NTP, Samba, SSH, SAN.</li>
                   </ul>
                 </Typography>
-                
+
               </Box>
             </Box>
             {/* Blog or Writing */}
             {/* Courses */}
-            {/* <Box
+            <Box
               sx={{
                 mt: {
                   xs: "2rem",
@@ -208,7 +212,120 @@ const Home = () => {
               >
                 Writing
               </Typography>
-            </Box> */}
+
+              <Link 
+                href="https://medium.com/@diegodevblog/desbloqueie-o-poder-do-monitoramento-linux-com-prometheus-e-grafana-da031f3eeb22"
+                underline="none"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Card
+                  sx={{
+                    display: 'flex',
+                    flexDirection: {
+                      xs: 'column',
+                      md: 'row',
+                    },
+                    mb: 2,
+                    boxShadow: 'none', // Remove shadow
+                    transition: 'transform 0.3s ease, background-color 0.3s ease', // Add transition for hover effect
+                    '&:hover': {
+                      transform: 'scale(1.01)', // Slightly scale up the card on hover
+                      // backgroundColor: '#f0f0f0', // Optional: Change background color on hover
+                    },
+                  }}
+                >
+                  <CardMedia
+                    component="img"
+                    sx={{
+                      width: {
+                        xs: '100%',
+                        md: '250px',
+                      },
+                      height: {
+                        xs: 'auto',
+                        md: '150px',
+                      },
+                    }}
+                    image="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*XX5IcoyeSaNXzaROOphqSA.jpeg"
+                    alt="Cover image"
+                  />
+                  <Box
+                    sx={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'center',
+                    }}
+                  >
+                    <CardContent>
+                      <Typography component="h2" variant="h5">
+                        Monitore Linux com Prometheus e Grafana
+                      </Typography>
+                      <Typography variant="body1" color="textSecondary" sx={{ mt: 1 }}>
+                        Guia prático para configurar e visualizar métricas em tempo real com essas ferramentas poderosas.
+                      </Typography>
+                    </CardContent>
+                  </Box>
+                </Card>
+              </Link>
+
+              <Link 
+                href="https://diegodevblog.medium.com/o-balanceamento-de-carga-desmistificado-como-transformar-seu-balanceamento-de-carga-em-uma-m%C3%A1quina-1f8782376254"
+                underline="none"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Card
+                  sx={{
+                    display: 'flex',
+                    flexDirection: {
+                      xs: 'column',
+                      md: 'row',
+                    },
+                    mb: 2,
+                    boxShadow: 'none', // Remove shadow
+                    transition: 'transform 0.3s ease, background-color 0.3s ease', // Add transition for hover effect
+                    '&:hover': {
+                      transform: 'scale(1.01)', // Slightly scale up the card on hover
+                      // backgroundColor: '#f0f0f0', // Optional: Change background color on hover
+                    },
+                  }}
+                >
+                  <CardMedia
+                    component="img"
+                    sx={{
+                      width: {
+                        xs: '100%',
+                        md: '250px',
+                      },
+                      height: {
+                        xs: 'auto',
+                        md: '150px',
+                      },
+                    }}
+                    image="https://miro.medium.com/v2/resize:fit:800/format:webp/1*JAUx10S6_IxUF5GL3zXnqA.png"
+                    alt="Cover image"
+                  />
+                  <Box
+                    sx={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'center',
+                    }}
+                  >
+                    <CardContent>
+                      <Typography component="h2" variant="h5">
+                        Desmistifique o balanceamento de carga
+                      </Typography>
+                      <Typography variant="body1" color="textSecondary" sx={{ mt: 1 }}>
+                        Aprenda a transformar seu balanceamento de carga em uma máquina eficiente com este guia detalhado.
+                      </Typography>
+                    </CardContent>
+                  </Box>
+                </Card>
+              </Link>
+
+            </Box>
           </Box>
 
         </Box>
