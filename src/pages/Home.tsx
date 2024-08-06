@@ -198,7 +198,7 @@ const Home = () => {
               sx={{
                 mt: {
                   xs: "2rem",
-                  lg: "6rem"
+                  lg: "4rem"
                 }
               }}
             >
